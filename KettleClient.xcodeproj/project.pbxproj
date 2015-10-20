@@ -15,6 +15,9 @@
 		48E4BF6B1BD64EE800DE576E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E4BF691BD64EE800DE576E /* LaunchScreen.storyboard */; };
 		48E4BF761BD64EE800DE576E /* KettleClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF751BD64EE800DE576E /* KettleClientTests.m */; };
 		48E4BF811BD64EE800DE576E /* KettleClientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF801BD64EE800DE576E /* KettleClientUITests.m */; };
+		48E4BF901BD64F0600DE576E /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF8F1BD64F0600DE576E /* Device.m */; settings = {ASSET_TAGS = (); }; };
+		48E4BF931BD64F0C00DE576E /* KettleClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF921BD64F0C00DE576E /* KettleClient.m */; settings = {ASSET_TAGS = (); }; };
+		48E4BF961BD64F1200DE576E /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF951BD64F1200DE576E /* GCDAsyncUdpSocket.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		48E4BF7C1BD64EE800DE576E /* KettleClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KettleClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E4BF801BD64EE800DE576E /* KettleClientUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KettleClientUITests.m; sourceTree = "<group>"; };
 		48E4BF821BD64EE800DE576E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E4BF8E1BD64F0600DE576E /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		48E4BF8F1BD64F0600DE576E /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		48E4BF911BD64F0C00DE576E /* KettleClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KettleClient.h; sourceTree = "<group>"; };
+		48E4BF921BD64F0C00DE576E /* KettleClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KettleClient.m; sourceTree = "<group>"; };
+		48E4BF941BD64F1200DE576E /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		48E4BF951BD64F1200DE576E /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,11 @@
 		48E4BF5A1BD64EE800DE576E /* KettleClient */ = {
 			isa = PBXGroup;
 			children = (
+				48E4BF971BD64F1600DE576E /* Udpsocket */,
+				48E4BF8E1BD64F0600DE576E /* Device.h */,
+				48E4BF8F1BD64F0600DE576E /* Device.m */,
+				48E4BF911BD64F0C00DE576E /* KettleClient.h */,
+				48E4BF921BD64F0C00DE576E /* KettleClient.m */,
 				48E4BF5E1BD64EE800DE576E /* AppDelegate.h */,
 				48E4BF5F1BD64EE800DE576E /* AppDelegate.m */,
 				48E4BF611BD64EE800DE576E /* ViewController.h */,
@@ -138,6 +152,15 @@
 				48E4BF821BD64EE800DE576E /* Info.plist */,
 			);
 			path = KettleClientUITests;
+			sourceTree = "<group>";
+		};
+		48E4BF971BD64F1600DE576E /* Udpsocket */ = {
+			isa = PBXGroup;
+			children = (
+				48E4BF941BD64F1200DE576E /* GCDAsyncUdpSocket.h */,
+				48E4BF951BD64F1200DE576E /* GCDAsyncUdpSocket.m */,
+			);
+			name = Udpsocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +230,7 @@
 				TargetAttributes = {
 					48E4BF571BD64EE800DE576E = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 4V2Z9F5KWF;
 					};
 					48E4BF701BD64EE800DE576E = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -273,6 +297,9 @@
 				48E4BF631BD64EE800DE576E /* ViewController.m in Sources */,
 				48E4BF601BD64EE800DE576E /* AppDelegate.m in Sources */,
 				48E4BF5D1BD64EE800DE576E /* main.m in Sources */,
+				48E4BF901BD64F0600DE576E /* Device.m in Sources */,
+				48E4BF961BD64F1200DE576E /* GCDAsyncUdpSocket.m in Sources */,
+				48E4BF931BD64F0C00DE576E /* KettleClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,9 +438,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KettleClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.musixstars.musixstarsapp.KettleClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -422,9 +449,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KettleClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.musixstars.musixstarsapp.KettleClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
