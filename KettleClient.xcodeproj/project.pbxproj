@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48D2F5221BECC079004694B3 /* CircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D2F5211BECC079004694B3 /* CircularSlider.m */; };
 		48E4BF5D1BD64EE800DE576E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF5C1BD64EE800DE576E /* main.m */; };
 		48E4BF601BD64EE800DE576E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF5F1BD64EE800DE576E /* AppDelegate.m */; };
 		48E4BF631BD64EE800DE576E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF621BD64EE800DE576E /* ViewController.m */; };
@@ -15,9 +16,9 @@
 		48E4BF6B1BD64EE800DE576E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E4BF691BD64EE800DE576E /* LaunchScreen.storyboard */; };
 		48E4BF761BD64EE800DE576E /* KettleClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF751BD64EE800DE576E /* KettleClientTests.m */; };
 		48E4BF811BD64EE800DE576E /* KettleClientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF801BD64EE800DE576E /* KettleClientUITests.m */; };
-		48E4BF901BD64F0600DE576E /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF8F1BD64F0600DE576E /* Device.m */; settings = {ASSET_TAGS = (); }; };
-		48E4BF931BD64F0C00DE576E /* KettleClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF921BD64F0C00DE576E /* KettleClient.m */; settings = {ASSET_TAGS = (); }; };
-		48E4BF961BD64F1200DE576E /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF951BD64F1200DE576E /* GCDAsyncUdpSocket.m */; settings = {ASSET_TAGS = (); }; };
+		48E4BF901BD64F0600DE576E /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF8F1BD64F0600DE576E /* Device.m */; };
+		48E4BF931BD64F0C00DE576E /* KettleClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF921BD64F0C00DE576E /* KettleClient.m */; };
+		48E4BF961BD64F1200DE576E /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4BF951BD64F1200DE576E /* GCDAsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48D2F5201BECC079004694B3 /* CircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularSlider.h; sourceTree = "<group>"; };
+		48D2F5211BECC079004694B3 /* CircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularSlider.m; sourceTree = "<group>"; };
 		48E4BF581BD64EE800DE576E /* KettleClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KettleClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E4BF5C1BD64EE800DE576E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48E4BF5E1BD64EE800DE576E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48D2F51F1BECC03E004694B3 /* CustumUI */ = {
+			isa = PBXGroup;
+			children = (
+				48D2F5201BECC079004694B3 /* CircularSlider.h */,
+				48D2F5211BECC079004694B3 /* CircularSlider.m */,
+			);
+			name = CustumUI;
+			sourceTree = "<group>";
+		};
 		48E4BF4F1BD64EE800DE576E = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +122,7 @@
 		48E4BF5A1BD64EE800DE576E /* KettleClient */ = {
 			isa = PBXGroup;
 			children = (
+				48D2F51F1BECC03E004694B3 /* CustumUI */,
 				48E4BF971BD64F1600DE576E /* Udpsocket */,
 				48E4BF8E1BD64F0600DE576E /* Device.h */,
 				48E4BF8F1BD64F0600DE576E /* Device.m */,
@@ -230,7 +243,7 @@
 				TargetAttributes = {
 					48E4BF571BD64EE800DE576E = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 4V2Z9F5KWF;
+						DevelopmentTeam = HFXJ3Z2S65;
 					};
 					48E4BF701BD64EE800DE576E = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -298,6 +311,7 @@
 				48E4BF601BD64EE800DE576E /* AppDelegate.m in Sources */,
 				48E4BF5D1BD64EE800DE576E /* main.m in Sources */,
 				48E4BF901BD64F0600DE576E /* Device.m in Sources */,
+				48D2F5221BECC079004694B3 /* CircularSlider.m in Sources */,
 				48E4BF961BD64F1200DE576E /* GCDAsyncUdpSocket.m in Sources */,
 				48E4BF931BD64F0C00DE576E /* KettleClient.m in Sources */,
 			);
@@ -441,6 +455,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KettleClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.musixstars.musxstarsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -452,6 +467,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KettleClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.musixstars.musxstarsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -523,6 +539,7 @@
 				48E4BF871BD64EE800DE576E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48E4BF881BD64EE800DE576E /* Build configuration list for PBXNativeTarget "KettleClientTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +548,7 @@
 				48E4BF8A1BD64EE800DE576E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48E4BF8B1BD64EE800DE576E /* Build configuration list for PBXNativeTarget "KettleClientUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +557,7 @@
 				48E4BF8D1BD64EE800DE576E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

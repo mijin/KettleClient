@@ -10,19 +10,38 @@
 #import "GCDAsyncUdpSocket.h"
 #import "Device.h"
 #import "KettleClient.h"
-
+#import "CircularSlider.h"
 @interface ViewController ()
 {
      GCDAsyncUdpSocket * udpSocket;
      Device * kettle;
 }
+@property (nonatomic, strong)  CircularSlider *slider;
 @end
 
 @implementation ViewController
 
+
+-(void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    _slider = [[CircularSlider alloc]initWithFrame:
+               CGRectMake((self.view.frame.size.width
+                           - slider_width)/2,
+                          150,
+                          slider_width,
+                          slider_width)];
+    
+     [self.view addSubview:_slider];
+    [_slider addTarget:self action:@selector(newValue:) forControlEvents:UIControlEventValueChanged];
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,6 +49,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)newValue:(CircularSlider*)slider{
+    
+    int   waterTemp = slider.currentValue;
+    
+    //Send command to change temp.
+    NSLog(@"Water Temp %d°", waterTemp );
+}
 
 -(void)udpSocket:(GCDAsyncUdpSocket *)socket disconnectedWithError:(NSError *)error {
     NSLog(@"Disconnected With Error - %@", error);
@@ -60,7 +86,7 @@
 
 -(void)udpSocket:(GCDAsyncUdpSocket *)sock didReceiveData:(NSData *)data fromAddress:(NSData *)address withFilterContext:(id)filterContext{
     
-    unsigned char* array = (unsigned char*) [data bytes];
+    //unsigned char* array = (unsigned char*) [data bytes];
   
     NSString *receiveString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     if (receiveString)
