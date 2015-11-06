@@ -11,6 +11,7 @@
 #import "Device.h"
 #import "KettleClient.h"
 #import "CircularSlider.h"
+
 @interface ViewController ()
 {
      GCDAsyncUdpSocket * udpSocket;

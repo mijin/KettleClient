@@ -10,7 +10,6 @@
 
 extern int slider_width;
 extern int line_width;
-#define TB_LINE_WIDTH 18
 
 @interface CircularSlider : UIControl
 @property (nonatomic,assign) int angle;

@@ -12,7 +12,6 @@
 #define ToDeg(rad)		( (180.0 * (rad)) / M_PI )
 #define SQR(x)			( (x) * (x) )
 
-/** Parameters **/
 #define PADDING 49
 
 int slider_width = 340;
@@ -52,10 +51,7 @@ int line_width = 18;
         _valueLabel.font = [UIFont boldSystemFontOfSize:24];
         _valueLabel.text = [NSString stringWithFormat:@"%d°",100];
         _valueLabel.textColor = [UIColor blackColor];
-    
-        
         [self addSubview:_valueLabel];
-        
     }
     
     return self;
